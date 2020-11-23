@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>App Starter HTML CSS Website Template</title>
+    <!--
+App Starter Template
+http://www.templatemo.com/tm-492-app-starter
+-->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+
+    <!-- PRE LOADER -->
+
+    <div class="preloader">
+        <div class="sk-spinner sk-spinner-pulse"></div>
+    </div>
+
+
+
+    <!-- Navigation Section -->
+
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+                <a href="index.html" class="navbar-brand wow zoomIn" data-wow-delay="1s"><span>Bizarello</span> Smart</a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home" class="smoothScroll">Home</a></li>
+                    <li><a href="#about" class="smoothScroll">Sobre</a></li>
+                    <li><a href="#screenshot" class="smoothScroll">Trabalhos</a></li>
+                    <li><a href="#pricing" class="smoothScroll">Serviços</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#modal1">Contato</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Home Section -->
+
+    <section id="home" class="main">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+
+                <div class="wow fadeInUp col-md-6 col-sm-5 col-xs-10 col-xs-offset-1 col-sm-offset-0" data-wow-delay="0.2s">
+                    <img src="images/home-img.png" class="img-responsive" alt="Home">
+                </div>
+
+                <div class="col-md-6 col-sm-7 col-xs-12">
+                    <div class="home-thumb">
+                        <h1 class="wow fadeInUp" data-wow-delay="0.6s">Bem vindo Bizarrelo Smart</h1>
+                        <p class="wow fadeInUp" data-wow-delay="0.8s">Somos especializados em reparos e manuteções de smartphones, venha conhecer nossas promoções.</p>
+                        <a href="#pricing" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="1s">Download App</a> <a href="#" data-toggle="modal" data-target="#modal-orcamento" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="1s">faça o orçamento online</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Orçamento -->
+
+    <div class="modal fade" id="modal-orcamento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-popup">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="wow fadeInDown" data-wow-delay="0.8s">Selecione o que deseja consertar</h2>
+                    <br>
+                    <!-- Nav tabs -->
+                    <div>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item" style="width:50%;">
+                                <a class="nav-link" data-toggle="tab" href="#menuc">Celulares</a>
+                            </li>
+
+                            <li class="nav-item" style="width:50%;">
+                                <a class="nav-link" data-toggle="tab" href="#menut">Tablet</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab panes -->
+
+                    <div class="tab-content">
+
+
+                        <div class="tab-pane fade" id="menuc">
+                            <p>Selecione o fabricante: </p><br>
+                          
+                                <div class="cc-selector">
+                                    <input id="alcatel" type="radio" name="celulares" value="alcatel" />
+                                    <label class="fabricante alcatel" for="alcatel"><img id="imgAlcatel" src="images/logos/alcatel.png" class="img-responsive" alt="alcatel">Alcatel</label>
+                                    <input id="asus" type="radio" name="celulares" value="asus" />
+                                    <label class="fabricante asus" for="asus"><img src="images/logos/asus.png" class="img-responsive" alt="alcatel">Asus</label>
+                                    <input id="apple" type="radio" name="celulares" value="apple" />
+                                    <label class="fabricante apple" for="apple"><img src="images/logos/apple.png" class="img-responsive" alt="apple">Apple</label>
+                                    <input id="lenovo" type="radio" name="celulares" value="lenovo" />
+                                    <label class="fabricante lenovo" for="lenovo"><img src="images/logos/lenovo.png" class="img-responsive" alt="lenovo">Lenovo</label>
+                                    <input id="lg" type="radio" name="celulares" value="lg" />
+                                    <label class="fabricante lg" for="lg"><img src="images/logos/lg.png" class="img-responsive" alt="lg">LG</label>
+                                    <input id="motorola" type="radio" name="celulares" value="motorola" />
+                                    <label class="fabricante motorola" for="motorola"><img src="images/logos/motorola.png" class="img-responsive" alt="motorola">Motorola</label>
+                                    <input id="nokia" type="radio" name="celulares" value="nokia" />
+                                    <label class="fabricante nokia" for="nokia"><img src="images/logos/nokia.png" class="img-responsive" alt="nokia">Nokia</label>
+                                    <input id="oneplus" type="radio" name="celulares" value="oneplus" />
+                                    <label class="fabricante oneplus" for="oneplus"><img src="images/logos/oneplus.png" class="img-responsive" alt="oneplus">OnePlus</label>
+                                    <input id="samsung" type="radio" name="celulares" value="samsung" />
+                                    <label class="fabricante samsung" for="samsung"><img src="images/logos/samsung.png" class="img-responsive" alt="samsung">Samsung</label>
+                                    <input id="sony" type="radio" name="celulares" value="sony" />
+                                    <label class="fabricante sony" for="sony"><img src="images/logos/sony.png" class="img-responsive" alt="sony">Sony</label>
+                                    <input id="xiaomi" type="radio" name="celulares" value="xiaomi" />
+                                    <label class="fabricante xiaomi" for="xiaomi"><img src="images/logos/xiaomi.png" class="img-responsive" alt="xiaomi">Xiaomi</label>
+                                </div>
+                            </div>
+
+                        <div class="tab-pane fade" id="menut">...</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- Modal Celulares-->
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="wow bounceIn section-title">
+                        <h1>Bem vindo ao nosso App</h1>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.4s">
+                    <h2>Nossa equipe</h2>
+                    <h3 class="wow fadeInUp" data-wow-delay="0.8s">Consertamos seu celular ou tablet.</h3>
+                </div>
+
+                <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+                    <div class="about-thumb">
+                        <img src="images/team-img1.jpg" class="img-responsive" alt="Team">
+                        <div class="about-overlay">
+                            <h3>Sérgio Bizarello</h3>
+                            <h4>DEVELOPER</h4>
+                            <ul class="social-icon">
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-instagram"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Divider Section -->
+
+    <section id="divider">
+        <div class="container">
+            <div class="row">
+
+                <div>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.4s" style="">Me chamo Sérgio Bizarello e sou dono da Bizarello Smart e da BizarelloCo.</h2>
+                    <div class="container">
+                        <h2>
+                            <div id="demo" class="collapse">
+                                Atualmente faço parte de uma equipe de TI, faço meus consertos fora do horário de expediente, mas estou a todo momento pronto para lhe atender, Sou formado no curso de Montagem e manuntenção de Micros. feito na Microcamp e Técnico em Mecatrônica feito no Instituto Nossa Senhora da Glória (INSG), sou bilingue, além da minha lingua nativa, o português, eu também falo o inglês y hablo un poquito de español, rs. Desenvolvi esse site a ponto de estar facilitando para o cliente o acesso a informação de quanto ficaria o seu conserto em média, e quem optar por estar a fazer o conserto conosco, concerteza será um cliente muito satisfeito.
+                            </div>
+                        </h2>
+                        <a href="#demo" class="btn btn-primary" data-toggle="collapse">Saiba mais sobre mim</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Screenshot Section -->
+
+    <section id="screenshot">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-offset-2 col-md-8 col-sm-12">
+                    <div class="section-title">
+                        <h1>App Screenshots</h1>
+                        <p class="wow fadeInUp" data-wow-delay="0.8s">Nulla nisi purus, ultrices et scelerisque at, ullamcorper et ex. Phasellus at nisi lobortis, semper tortor sed, gravida neque.</p>
+                    </div>
+                </div>
+
+                <!-- Screenshot Owl Carousel -->
+                <div id="screenshot-carousel" class="owl-carousel">
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                        <a href="images/screenshot-img1.jpg" class="image-popup">
+                              <img src="images/screenshot-img1.jpg" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                        <a href="images/screenshot-img2.jpg" class="image-popup">
+                              <img src="images/screenshot-img2.jpg" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                        <a href="images/screenshot-img3.jpg" class="image-popup">
+                              <img src="images/screenshot-img3.jpg" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                        <a href="images/screenshot-img4.jpg" class="image-popup">
+                              <img src="images/screenshot-img4.jpg" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                        <a href="images/screenshot-img5.jpg" class="image-popup">
+                              <img src="images/screenshot-img5.jpg" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                        <a href="images/screenshot-img6.jpg" class="image-popup">
+                              <img src="images/screenshot-img6.jpg" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                        <a href="images/screenshot-img7.jpg" class="image-popup">
+                              <img src="images/screenshot-img7.jpg" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                    <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                        <a href="images/screenshot-img8.jpg" class="image-popup">
+                              <img src="images/screenshot-img8.jpg" class="img-responsive" alt="screenshot">
+                         </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Pricing Section -->
+
+    <section id="pricing">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title">
+                        <h1>App Pricing</h1>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.4s">
+                    <div class="pricing-plan">
+                        <div class="pricing-month">
+                            <h2>$60</h2>
+                        </div>
+                        <div class="pricing-title">
+                            <h3>Starter</h3>
+                        </div>
+                        <p>40 Users</p>
+                        <p>10GB per user</p>
+                        <p>Unlimited Support</p>
+                        <p>1 Year License</p>
+                        <button class="btn btn-default section-btn">Register now</button>
+                    </div>
+                </div>
+
+                <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
+                    <div class="pricing-plan">
+                        <div class="pricing-month">
+                            <h2>$120</h2>
+                        </div>
+                        <div class="pricing-title">
+                            <h3>Business</h3>
+                        </div>
+                        <p>100 Users</p>
+                        <p>20GB per user</p>
+                        <p>Unlimited Support</p>
+                        <p>2 Years License</p>
+                        <button class="btn btn-default section-btn">Register now</button>
+                    </div>
+                </div>
+
+                <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.8s">
+                    <div class="pricing-plan">
+                        <div class="pricing-month">
+                            <h2>$200</h2>
+                        </div>
+                        <div class="pricing-title">
+                            <h3>Advanced</h3>
+                        </div>
+                        <p>200 Users</p>
+                        <p>30GB per user</p>
+                        <p>Unlimted Support</p>
+                        <p>3 Years License</p>
+                        <button class="btn btn-default section-btn">Register now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Newsletter Section -->
+
+    <section id="newsletter">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-offset-2 col-md-8 col-sm-12">
+                    <div class="wow bounceIn section-title">
+                        <h2>Subscribe Newsletter</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.5s">Maecenas orci sem, mollis quis risus a, venenatis condimentum felis. Integer ut bibendum ipsum. Etiam a tristique sapien, ut dictum augue.</p>
+                    </div>
+                    <div class="wow fadeInUp newsletter-form" data-wow-delay="0.8s">
+                        <form action="#" method="post">
+                            <div class="col-md-8 col-sm-7">
+                                <input name="email" type="email" class="form-control" id="email" placeholder="Your Email here">
+                            </div>
+                            <div class="col-md-4 col-sm-5">
+                                <input name="submit" type="submit" class="form-control" id="submit" value="Send Newsletter">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8 col-sm-6">
+                    <div class="wow fadeInUp footer-copyright" data-wow-delay="0.4s">
+                        <p>Copyright &copy; 2016 Your App Starter
+                            <span>||</span> Design: <a href="https://plus.google.com/+templatemo" title="free css templates" target="_blank">Templatemo</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <ul class="wow fadeInUp social-icon" data-wow-delay="0.8s">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-dribbble"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal Contact -->
+
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-popup">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title">Contact Form</h2>
+                </div>
+
+                <form action="#" method="post">
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Email Address" required>
+                    <textarea name="message" rows="3" class="form-control" id="message" placeholder="Message" required></textarea>
+                    <input name="submit" type="submit" class="form-control" id="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Back top -->
+
+    <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <!-- SCRIPTS -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!--<script src="js/jquery-3.3.1.min.js"></script>-->
+    
+
+    <script type="text/javascript">
+        $(function() {
+
+            $('input[name="celulares"]').on('click', function() {
+
+
+                $('#myModal').modal('show');
+                $('#modal-orcamento').modal('hide');
+
+            });
+
+            $("#apple").on('click', function() {
+
+
+                alert('testando Asus');
+
+            });
+
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
